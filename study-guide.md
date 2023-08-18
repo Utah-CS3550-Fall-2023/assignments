@@ -1,6 +1,5 @@
----
-title: Study Guide
-...
+Study Guide
+===========
 
 This document lists vocabulary, concepts, and syntax that you're
 expected to know for the midterm and final.
