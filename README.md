@@ -7,15 +7,26 @@ basic web applications that interact with a database.
 
 This repository contains written material for the class, including:
 
-| Document                      | Status            | Due               |
-|-------------------------------|-------------------|-------------------|
-| [Study guide](study-guide.md) | Current to Aug 25 | 4 Oct and 11 Dec  |
-| Homework 1 (HTML)             | Draft             | 1 Sep and 8 Sep   |
-| Homework 2 (CSS)              | None              | 15 Sep and 22 Sep |
-| Homework 3 (Django)           | None              | 20 Oct and 27 Oct |
-| Homework 4 (AWS)              | None              | 3 Nov and 10 Nov  |
-| Homework 5 (Users)            | None              | 24 Nov            |
-| Homework 6 (JavaScript)       | None              | 1 Dec and 8 Dec   |
+* [Study Guide](study-guide.md) \
+  Covers what you're expected to know for the midterm and final.
+  Current to 25 August.
+* [Installation Guide](install.md) \
+  How to install software needed in class.
+  
+As well as homework assignments:
+
+* Homework 1 (HTML) \
+  Currently only a draft. Due 1 Sep and 8 Sep.
+* Homework 2 (HTML) \
+  Currently not available. Due 15 Sep and 22 Sep.
+* Homework 3 (HTML) \
+  Currently not available. Due 20 Oct and 27 Oct.
+* Homework 4 (HTML) \
+  Currently not available. Due 3 Nov and 10 Nov.
+* Homework 5 (HTML) \
+  Currently not available. Due 24 Nov.
+* Homework 6 (HTML) \
+  Currently not available. Due 1 Dec and 8 Dec.
 
 You can see draft assignments by choosing them from the file list
 above. However, until those assignments are finalized the instructor
