@@ -17,15 +17,15 @@ As well as homework assignments:
 
 * Homework 1 (HTML) \
   Currently only a draft. Due 1 Sep and 8 Sep.
-* Homework 2 (HTML) \
+* Homework 2 (CSS) \
   Currently not available. Due 15 Sep and 22 Sep.
-* Homework 3 (HTML) \
+* Homework 3 (Django) \
   Currently not available. Due 20 Oct and 27 Oct.
-* Homework 4 (HTML) \
+* Homework 4 (AWS) \
   Currently not available. Due 3 Nov and 10 Nov.
-* Homework 5 (HTML) \
+* Homework 5 (Identity) \
   Currently not available. Due 24 Nov.
-* Homework 6 (HTML) \
+* Homework 6 (JS) \
   Currently not available. Due 1 Dec and 8 Dec.
 
 You can see draft assignments by choosing them from the file list
