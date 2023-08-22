@@ -328,7 +328,7 @@ non-disabled users as well. For example, if you set up your `<label>`
 elements correctly, clicking on a label should allow you to type into
 the associated input field.
 
-Grading Rubrik
+Grading Rubric
 --------------
 
 This assignment is worth 100 points. The different phases are worth
