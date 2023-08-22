@@ -110,7 +110,7 @@ Test that this all worked by running:
 
     python3 manage.py runserver --noreload
 
-Open your browser and go to http://localhost:8000/static/index.html
+Open your browser and go to http://localhost:8000/static/test.html
 
 You should see the words "The test worked." on your screen. If you do,
 commit everything to Github; Phase 1 is done. If you do not, get help.
