@@ -22,13 +22,9 @@ Make sure that you have database support:
     python3 -c "import sqlite3"
 
 If this command succeeds with no output, that means everything is
-good. If it produces what looks like an error, try to execute the
-following:
-
-    python -m pip install sqlite3
-    
-Then retry the `import` command. If that works now, great. If it still
-fails, seek help from the instructors.
+good. This should be the case for most Python installations, since the
+`sqlite3` module ships with Python by default. If it produces what
+looks like an error, seek help from the instructors.
 
 Installing Django
 -----------------
