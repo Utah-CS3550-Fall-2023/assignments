@@ -11,6 +11,10 @@ of macOS, but it may be out of date. Python is available for all
 platforms from [python.org]. Check your Python version with:
 
     python3 --version
+    
+On some machines, you might need to use `python` instead of `python3`.
+But in this case, make sure it prints the version as Python 3, not the
+obsolete Python 2 language.
 
 If this command fails, or prints a version older than 3.8, you need to
 go to [python.org] and install Python. (You can also install Python
