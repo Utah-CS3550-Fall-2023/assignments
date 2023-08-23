@@ -19,7 +19,7 @@ source, as long as it is recent enough.)
 
 Make sure that you have database support:
 
-    python3 -c 'import sqlite3'
+    python3 -c "import sqlite3"
 
 If this command succeeds with no output, that means everything is
 good. If it produces what looks like an error, try to execute the
