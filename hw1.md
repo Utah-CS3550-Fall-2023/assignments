@@ -184,10 +184,10 @@ and different users will then see different content.
 
 Here are what these four pages should look like:
 
-|                                   |                                   |
-| --------------------------------- | --------------------------------- |
-| ![](screenshots/assignments.html) | ![](screenshots/submissions.html) |
-| ![](screenshots/profile.html)     | ![](screenshots/login.html)       |
+|                                                       |                                                       |
+|-------------------------------------------------------|-------------------------------------------------------|
+| ![The assignments page](screenshots/assignments.html) | ![The submissions page](screenshots/submissions.html) |
+| ![The profile page](screenshots/profile.html)         | ![The login page](screenshots/login.html)             |
 
 Write HTML for each view. Make sure that:
 
