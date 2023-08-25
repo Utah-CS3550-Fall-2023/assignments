@@ -9,7 +9,7 @@ This repository contains written material for the class, including:
 
 * [Study Guide](study-guide.md) \
   Covers what you're expected to know for the midterm and final.
-  Current to 28 August.
+  Current to 30 August.
 * [Installation Guide](install.md) \
   How to install software needed in class.
   

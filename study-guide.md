@@ -13,7 +13,7 @@ internet and the web are (to within the decade). You should be able to
 explain the difference between the internet and the web. You should be
 able to list the most common web browsers.
 
-You should be able to explain clients, servers, the client-server
+You should be able to define clients, servers, the client-server
 architecture, message-passing, requests, and responses.
 
 The parts of a URL: the protocol (or scheme), hostname (or domain),
@@ -47,5 +47,12 @@ and how to write comments.
 
 You should be able to look at a screenshot of a website or application
 and write valid, semantically-meaningful HTML for it using standard
-tags. You should also be able to look at some HTML and suggest better
-or more semantically meaningful structure.
+tags. You should also be able to look at some HTML and suggest more
+semantically meaningful elements.
+
+You should be able to define the idea of universal accessibility and
+name 3-5 common disabilities that can affect someone's use of the
+internet, including both permanent and temporary disabilities. You
+should know how to use the `autofocus` and `tabindex` properties. You
+should be able to write textual alternatives for images. You should be
+able identify common accessibility problems in HTML source code.
