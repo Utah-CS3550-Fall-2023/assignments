@@ -186,8 +186,8 @@ Here are what these four pages should look like:
 
 |                                                       |                                                       |
 |-------------------------------------------------------|-------------------------------------------------------|
-| ![The assignments page](screenshots/assignments.html) | ![The submissions page](screenshots/submissions.html) |
-| ![The profile page](screenshots/profile.html)         | ![The login page](screenshots/login.html)             |
+| ![The assignments page](screenshots/assignments.png) | ![The submissions page](screenshots/submissions.png) |
+| ![The profile page](screenshots/profile.png)         | ![The login page](screenshots/login.png)             |
 
 Write HTML for each view. Make sure that:
 
