@@ -184,7 +184,8 @@ and different users will then see different content.
 
 Here are what these four pages should look like:
 
-|-----------------------------------|-----------------------------------|
+|                                   |                                   |
+| --------------------------------- | --------------------------------- |
 | ![](screenshots/assignments.html) | ![](screenshots/submissions.html) |
 | ![](screenshots/profile.html)     | ![](screenshots/login.html)       |
 
