@@ -15,8 +15,8 @@ This repository contains written material for the class, including:
   
 As well as homework assignments:
 
-* Homework 1 (HTML) \
-  Currently only a draft. Due 1 Sep and 8 Sep.
+* [Homework 1 (HTML)](hw1.md) \
+  Due 1 Sep and 8 Sep.
 * Homework 2 (CSS) \
   Currently not available. Due 15 Sep and 22 Sep.
 * Homework 3 (Django) \
