@@ -1,8 +1,8 @@
 CS 3550 Assignment 1 (HTML)
 ===========================
 
-**Status**: Final
-**Due**: Phase 1 due **1 Sep**. Phase 2--5 due **8 Sep**.
+**Status**: Final \
+**Due**: Phase 1 due **1 Sep**. Phase 2--4 due **8 Sep**.
 
 About
 -----
@@ -46,7 +46,7 @@ folder.
 Third, run the following set of commands:
 
     cd <path>/cs3550
-    python3 -m django startproject cs3550 $PWD
+    python3 -m django startproject cs3550 .
 
 In the first command, replace `<path>` with whatever path is necessary
 to get to the Git checkout. The second command creates a Django
