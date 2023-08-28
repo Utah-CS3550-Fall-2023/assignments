@@ -119,11 +119,11 @@ commit everything to Github; Phase 1 is done. If you do not, get help.
 Phase 2: Writing the assignments page
 -------------------------------------
 
-Create the file `assignment.html` in the `static` directory. In this
-file, you can write HTML code, and the web page defined by that HTML
-code will show up when you start the server (by executing the
-`runserver` command) and go to http://localhost:8000/static/index.html
-in your browser. Your task is add HTML code to this file to make an
+Create the file `index.html` in the `static` directory. In this file,
+you can write HTML code, and the web page defined by that HTML code
+will show up when you start the server (by executing the `runserver`
+command) and go to http://localhost:8000/static/index.html in your
+browser. Your task is add HTML code to this file to make an
 "assignment" page for the grading application, which is intended to
 look like so:
 
