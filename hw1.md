@@ -1,7 +1,7 @@
 CS 3550 Assignment 1 (HTML)
 ===========================
 
-**Status**: Draft (to be finalized by 26 Aug)
+**Status**: Final
 **Due**: Phase 1 due **1 Sep**. Phase 2--5 due **8 Sep**.
 
 About
