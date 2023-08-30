@@ -150,7 +150,7 @@ Additionally, keep in mind that the page:
 You can find a copy of the [favicon file](resources/favicon.ico) in
 the `resources` directory of this repository. It looks terrible but
 that isn't the point. You can find a copy of the
-[image](screenshots/assignments.md) in the `screenshots` directory of
+[image](screenshots/assignments.png) in the `screenshots` directory of
 this repository.
 
 Use appropriate structural elements, including `<header>`, `<nav>`,
