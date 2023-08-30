@@ -341,6 +341,9 @@ different weights:
 - Your web server must start and respond to requests on `localhost`
 - Your web server must successfully show the test page at
   http://localhost:8000/static/test.html
+  
+If you pass all auto-tests up to and including "Checking that
+`/static/test.html` exists", then you have completed this phase.
 
 Note that if you don't complete this phase, it is impossible to grade
 most of the others, so you won't receive a passing grade.
@@ -354,7 +357,7 @@ most of the others, so you won't receive a passing grade.
   formatted text.
 - The appropriate HTML attributes must be used where required.
 
-**Phase 4** is worth 50 points. Is is graded on:
+**Phase 3** is worth 50 points. Is is graded on:
 
 - All of the required views must exist.
 - Each view must contain all of the required content.
@@ -362,7 +365,7 @@ most of the others, so you won't receive a passing grade.
 - Each view must set the appropriate HTML attributes where required.
 - All links on each view must work and go to the appropriate other view.
 
-**Phase 5** is worth 10 points. It is graded on:
+**Phase 4** is worth 10 points. It is graded on:
 
 - Tab order and autofocus must be set correctly
 - All images, links, and input elements must have appropriate
