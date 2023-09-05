@@ -160,9 +160,9 @@ and `<main>` for the main areas of the page; `<em>`, `<strong>`, and
 and images. Include all required attributes, such as `href` for `<a>`
 tags and `src` for `<img>` tags.
 
-In the header, make "Assignments" link to `index.html` and "Profile"
-link to `profile.html`. (This way the links will all work when you add
-more pages later.)
+In the header, make "Assignments" link to `assignments.html` and
+"Profile" link to `profile.html`. (This way the links will all work
+when you add more pages later.)
   
 As you work on this web page, make sure to write valid, well-indented,
 and easy-to-read HTML code. If you make mistakes, be sure to use the
