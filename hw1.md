@@ -370,7 +370,8 @@ most of the others, so you won't receive a passing grade.
 - Tab order and autofocus must be set correctly
 - All images, links, and input elements must have appropriate
   descriptions
-- The `button` role must be set for the "Cancel" and "Log out" links.
+- The `button` role must be set for the "Back to assignment" and "Log
+  out" links.
 
 **Cover Sheet** is worth 5 points. It is graded on:
 
