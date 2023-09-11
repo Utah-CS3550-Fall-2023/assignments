@@ -56,3 +56,54 @@ internet, including both permanent and temporary disabilities. You
 should know how to use the `autofocus` and `tabindex` properties. You
 should be able to write textual alternatives for images. You should be
 able identify common accessibility problems in HTML source code.
+
+CSS
+---
+
+You should know the following selectors:
+
+- Tag name, ID, and class selectors
+- Descendant, child, next, and sibling selectors
+- The `:hover` and `:active` pseudo-selectors
+
+You should also know how to add `class` and `id` attributes to
+elements. You should be able to write selectors to select various
+elements on an HTML page.
+
+You should know the following CSS properties:
+
+- `font-family`, `font-weight`, `font-style`, `font-size`, and
+  `text-decoration`
+- `color`, `background-color`, and `opacity`
+- `border` (the three-value form) and its subproperties like
+  `border-bottom` or `border-left-width`
+- `border-radius` (the one-value form) and `box-shadow` (the
+  three-value form)
+
+You should be able to explain the cascading rule. You should be able
+to explain CSS inheritance. You should be able to use CSS shorthand
+properties.
+
+You should be able to use the following types of values:
+
+- For lengths, the `px`, `rem`, `vw`, and `wh` units
+- Also for lengths, the `calc` function, including `min` and `max`
+- For colors, hex colors or named colors
+- For `line-height`, numeric multipliers
+
+You should be able to use flexible box layout for complex layouts. You
+should be able to identify rows and columns in a given layout. You
+should be able to use the following CSS properties for flexible box
+layout:
+
+- `display`, the `flex` value
+- `flex-direction`
+- `width`, `flex-grow`, and `flex-shrink`
+- `justify-content` and `gap`
+- `height` and `align-items`
+- `margin` and `padding`
+
+You should be able to name the components of the CSS box model (width,
+padding, border, margin) correctly. You should know the order of top,
+right, bottom, and left in properties like `margin`. You should be
+able to explain margin collapsing at a high level.
