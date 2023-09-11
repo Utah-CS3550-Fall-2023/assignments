@@ -241,7 +241,7 @@ below:
 |--------------------------------------------------------------------------------|----------------------------------------------|----------------------------------------------------------------------------|
 | ![The profile page in a narrow browser window](screenshots/profile-narrow.png) | ![The profile page](screenshots/profile.png) | ![The profile page in a wide browser window](screenshots/profile-wide.png) |
 
-This effect is tricky to replicate. You will need to use `max-width`,
+This effect is tricky to replicate. You will need to use `width`,
 `padding`, and the `calc` and `max` operators. Make sure to test it at
 various widths. Make sure that the navigation banner and main content
 behaves correctly in all five HTML pages.
