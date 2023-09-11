@@ -19,8 +19,8 @@ As well as homework assignments:
 
 * [Homework 1 (HTML)](hw1.md) \
   Due 1 Sep and 8 Sep.
-* Homework 2 (CSS) \
-  Currently a draft. Due 15 Sep and 22 Sep.
+* [Homework 2 (CSS)](hw2.md) \
+  Due 15 Sep and 22 Sep.
 * Homework 3 (Django) \
   Currently not available. Due 20 Oct and 27 Oct.
 * Homework 4 (AWS) \
