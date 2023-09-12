@@ -55,6 +55,9 @@ so, Phase 1 is done. If you do not, get help.
 General rules
 -------------
 
+You can remove the yellow-text line from your CSS now. (You will
+continue to pass Phase 1.)
+
 When writing any CSS for the phases below, stick to the following
 rules:
 
