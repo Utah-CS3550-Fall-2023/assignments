@@ -34,7 +34,7 @@ and test that http://localhost:8000/static/main.css shows exactly this
 contents.
 
 Edit your `index.html` file and add a `<link>` element. Its
-hyperreference should point to the CSS file you just created, and the
+hyperreference should point to `/static/main.css`, and the
 relationship type should be `stylesheet`. Open your `index.html` page.
 Make sure that the text is red. If not, seek help.
 
