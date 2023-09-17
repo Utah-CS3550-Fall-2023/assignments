@@ -114,15 +114,15 @@ other weights, so don't include any others.
 Include both font on your page using Google Fonts. Use the `@import`
 method instead of the `<link>` method. Do not create a separate
 `<style>` element in your HTML. Instead, note that the `<style>`
-element suggested by Google Fonts has a single long `@include` line.
-Copy that `@include` line into your `main.css` file.
+element suggested by Google Fonts has a single long `@import` line.
+Copy that `@import` line into your `main.css` file.
 
-*Note:* This `@include` method is less efficient than adding the
+*Note:* This `@import` method is less efficient than adding the
 `<link>`, so you wouldn't want to do it in a production website. It
 forces the browser to download your CSS file before it can start to
 download fonts, whereas with `<link>` it can start both in parallel.
-However, `@include` is much simpler for us to grade, and the speed
-impact isn't large, so `@include` is required for this assignment.
+However, `@import` is much simpler for us to grade, and the speed
+impact isn't large, so `@import` is required for this assignment.
 
 [ibm-plex-sans]: https://fonts.google.com/specimen/IBM+Plex+Sans
 [ibm-plex-mono]: https://fonts.google.com/specimen/IBM+Plex+Mono
