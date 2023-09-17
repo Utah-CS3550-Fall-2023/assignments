@@ -107,3 +107,15 @@ You should be able to name the components of the CSS box model (width,
 padding, border, margin) correctly. You should know the order of top,
 right, bottom, and left in properties like `margin`. You should be
 able to explain margin collapsing at a high level.
+
+You should be able to critique a visual design on the basis of:
+
+- Whether the design correctly represents hierarchy
+- Whether the design groups items and identifies differences
+- Whether the design uses appropriate metaphors
+- Whether the design uses appropriate colors
+- Whether the design uses an appropriate font
+
+You should also be able to recommend changes to address your
+critiques, including describing what layouts, fonts, or colors would
+better match the design.
