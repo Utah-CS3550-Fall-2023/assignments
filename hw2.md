@@ -318,6 +318,10 @@ interesting and the most difficult aspect of this assignment. Don't
 just make them a single sentence; the instructors use your answers to
 make these assignments more interesting and easier.
 
+Once you are done, commit everything and push it to Github. **Make
+sure to include the text "Please grade" in your final commit message**
+to help TAs identify the right commit to grade.
+
 How you will use this
 ---------------------
 
