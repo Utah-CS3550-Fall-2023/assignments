@@ -62,7 +62,8 @@ When writing any CSS for the phases below, stick to the following
 rules:
 
 - All lengths should use `rem` units, except borders and shadows,
-  which should use `px`
+  which should use `px`, and a few places where `%` are allowed,
+  indicated below.
 - Always use unitless multipliers for `line-height`
 - Do not use any `display` mode except the default and `flex`
 - Do not use tables for layout
@@ -195,7 +196,8 @@ the link is "active", that is, *while* you are clicking on it, it is
 black. This seems minor but helps the user know they are taking an
 action when they click.
 
-Ensure that all tables span the whole width of the main content.
+Ensure that all tables span the whole width of the main content. You
+may use `%` units for this if you'd like.
 
 Make table columns that contain numbers right-aligned. These include
 the "weight" column in `assignments.html` and the "graded" column in
@@ -252,9 +254,10 @@ below:
 | ![The profile page in a narrow browser window](screenshots/profile-narrow.png) | ![The profile page](screenshots/profile.png) | ![The profile page in a wide browser window](screenshots/profile-wide.png) |
 
 This effect is tricky to replicate. You will need to use `width`,
-`padding`, and the `calc` and `max` operators. Make sure to test it at
-various widths. Make sure that the navigation banner and main content
-behaves correctly in all five HTML pages.
+`padding`, and the `calc` and `max` operators. You may use `%` units
+if it helps. Make sure to test it at various widths. Make sure that
+the navigation banner and main content behaves correctly in all five
+HTML pages.
 
 Also make sure that the link inside each action card is at the right
 end of the card, at any page width.
