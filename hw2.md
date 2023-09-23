@@ -215,7 +215,7 @@ Both text entries and the submission button should be half as wide as
 the main content. The text entries should be aligned to the right edge
 of the main content, while the button should be centered. You may need
 to add more HTML elements wrapping each label and text entry to
-accomplish this.
+accomplish this. You may use `%` units if you'd like.
 
 In `submissions.html`, leave the text entries in the "grade" column
 and the "Submit" button at their default widths.
