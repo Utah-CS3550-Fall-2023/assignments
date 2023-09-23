@@ -186,6 +186,11 @@ Add a light gray horizontal line below the page title. It should go
 whitespace before or after these horizontal line. Do not use an `<hr>`
 element; instead, use `border-bottom`.
 
+Unfortunately, in _some_ of the screenshots, there's a horizontal line
+between the header row and the rest of the rows, and in other
+screenshots there isn't. I apologize for the confusion! You may add
+the line or not as you wish.
+
 Phase 4: Styling Links, Forms, and Tables
 -----------------------------------------
 
