@@ -119,3 +119,46 @@ You should be able to critique a visual design on the basis of:
 You should also be able to recommend changes to address your
 critiques, including describing what layouts, fonts, or colors would
 better match the design.
+
+------------------------------------------------------------------------
+
+Topics below this line are not on the midterm but are on the final.
+
+Django
+------
+
+You should be able to explain what components of a web server are
+provided by Django. You should be able to explain the roles of the
+model, view, and controller in a MVC-style web application. You should
+feel comfortable explaining the roles of individual files in a
+standard Django project, including `settings.py`, `urls.py`,
+`models.py`, `views.py`, the `migrations/` folder, the `static/`
+folder, and the `templates/` folder.
+
+You should know the following Django field types:
+
+- `IntegerField`, `FloatField`, and `DecimalField`
+- `CharField` and `TextField`
+- `EmailField` and `URLField`
+- `DateField` and `DateTimeField`
+- `FileField` and `ImageField`
+
+You should be able to identify which field is appropriate in various
+situations, and also be able to use the `max_length`, `blank`,
+`default`, and `unique` attributes.
+
+You should be able to model complex relationships in web application
+state using `ForeignKey` relationships. You should know about the
+`on_delete` and `limit_choices_to` attributes on `ForeignKey` fields.
+
+You should be able to create, save, and query Django model objects.
+Specifically, you should know the following query operators:
+
+- `filter`, `exclude`, `union`, `intersection`, and `distinct`
+- `order_by` and `reverse`
+- `count` and `aggregate`
+- `first` and `last`
+- `contains` and `exists`
+
+You should be able to explain the "1 + N" problem and be able to use
+`select_related` to fix it.
