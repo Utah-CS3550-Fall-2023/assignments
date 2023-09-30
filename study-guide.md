@@ -86,7 +86,7 @@ properties.
 
 You should be able to use the following types of values:
 
-- For lengths, the `px`, `rem`, `vw`, and `wh` units
+- For lengths, the `px`, `rem`, `vw`, and `vh` units
 - Also for lengths, the `calc` function, including `min` and `max`
 - For colors, hex colors or named colors
 - For `line-height`, numeric multipliers
