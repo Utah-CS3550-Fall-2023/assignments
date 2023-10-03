@@ -103,6 +103,9 @@ layout:
 - `height` and `align-items`
 - `margin` and `padding`
 
+The [Notes](notes.md#flex-box) have a short checklist you can follow
+to build complex flex-box layouts.
+
 You should be able to name the components of the CSS box model (width,
 padding, border, margin) correctly. You should know the order of top,
 right, bottom, and left in properties like `margin`. You should be

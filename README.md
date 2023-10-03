@@ -12,6 +12,8 @@ This repository contains written material for the class, including:
   Current to 27 September.
 * [Installation Guide](install.md) \
   How to install software needed in class.
+* [Various Notes](notes.md) \
+  Guides and checklists for various tasks.
 * [Helpful links](links.md) \
   Usually these were demonstrated in class.
   
