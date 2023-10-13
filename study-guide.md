@@ -165,3 +165,19 @@ Specifically, you should know the following query operators:
 
 You should be able to explain the "1 + N" problem and be able to use
 `select_related` to fix it.
+
+You should be able to explain migrations, when they are created, when
+they are run, and what problem they solved.
+
+You should know the `for`, `if`, `with`, and `include` Django template
+blocks. You should know the following Django template filters:
+
+- `default`
+- `floatformat`, `date`, `timesince`
+- `join`, `length`, `pluralize`
+
+You should know the syntax for defining URLs, including parameterized
+URLs. You should know how to use the `render` function.
+
+You should know how to catch errors raised by queries and how to
+return 404 or other error pages.
