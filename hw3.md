@@ -26,7 +26,7 @@ Phase 1: Setup and header
 
 Create a Django application called `grades` by running:
 
-    python3 manage.py createapp grades
+    python3 manage.py startapp grades
 
 As usual, you may need to use `python` instead of `python3`, or give
 the full path to your Python executable, just as you did for [Homework
@@ -61,7 +61,7 @@ that we'll need later, hence that view being called `login_form`.)
 Open the `urls.py` file in the `cs3550` directory and add the
 following line to the top:
 
-    from ..grades import views
+    from grades import views
 
 Now add these entries to the `urlpatterns` list:
 
