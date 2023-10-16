@@ -1,4 +1,4 @@
-CS 3550 Assignment 2 (CSS)
+CS 3550 Assignment 3 (Django)
 ==========================
 
 **Status**: Final \
