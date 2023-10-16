@@ -56,7 +56,8 @@ Make similar definitions for the other four pages (`index`,
 `submissions` view, the function should take an additional parameter,
 `assignment_id`. Make sure to use the correct function name and the
 correct template name. (Note that `login` is already a Django function
-that we'll need later, hence that view being called `login_form`.)
+that we'll need later, hence that controller being called
+`login_form`.)
 
 Open the `urls.py` file in the `cs3550` directory and add the
 following line to the top:
