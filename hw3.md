@@ -17,7 +17,7 @@ a database, and you will be able to grade students' assignments:
 - Use templates to generate views from data
 - Modify data in response to form submissions
 
-The assignment is due Friday, 27 Sep before midnight. The course's
+The assignment is due Friday, 27 Oct before midnight. The course's
 normal extension policy applies. Hand in your finished assignment by
 pushing it to your repository on Github.
 
