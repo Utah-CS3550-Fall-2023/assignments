@@ -24,7 +24,7 @@ As well as homework assignments:
 * [Homework 2 (CSS)](hw2.md) \
   Due 15 Sep and 22 Sep.
 * [Homework 3 (Django)](hw3.md) \
-  Currently a draft (until 16 Oct). Due 20 Oct and 27 Oct.
+  Due 20 Oct and 27 Oct.
 * Homework 4 (AWS) \
   Currently not available. Due 3 Nov and 10 Nov.
 * Homework 5 (Identity) \
