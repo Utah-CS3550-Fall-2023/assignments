@@ -21,8 +21,8 @@ The assignment is due Friday, 27 Oct before midnight. The course's
 normal extension policy applies. Hand in your finished assignment by
 pushing it to your repository on Github.
 
-Phase 1: Setup and header
--------------------------
+Phase 1: Setup
+--------------
 
 Create a Django application called `grades` by running:
 
@@ -35,6 +35,11 @@ the full path to your Python executable, just as you did for [Homework
 This command should succeed and create a directory called `grades`
 with files inside it called `models.py` and `views.py`. (It will also
 contain `admin.py` and `tests.py`, which we won't be using.)
+
+Open the `settings.py` file in your `cs3550` directory. Find the
+portion that defines `INSTALLED_APPS` and add the string `'grades'` to
+the list. This means that the `grades` app you just created is now
+part of the project.
 
 Inside the `grades` directory contain a subdirectory called
 `templates`. Move all of the HTML files in `static` to this new
