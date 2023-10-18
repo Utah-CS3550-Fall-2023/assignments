@@ -73,7 +73,7 @@ Now add these entries to the `urlpatterns` list:
 
 ```python
 path("", views.assignments),
-path("<int:assignment_id>", views.assignment),
+path("<int:assignment_id>/", views.assignment),
 path("<int:assignment_id>/submissions", views.submissions),
 path("profile/", views.profile),
 path("profile/login", views.login_form),
