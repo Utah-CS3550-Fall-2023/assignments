@@ -141,9 +141,10 @@ When you're finished, run:
     python3 manage.py makemigration
     python3 manage.py migrate
 
-This Phase will be autograded by running a dummy data script, which
-you can find [here](...). You can run it on your own machine by saving
-it to the same directory as `manage.py` and then running:
+This Phase will be graded by running a dummy data script, which you
+can find [here](resources/makedata.py). You can run it on your own
+machine by saving it to the same directory as `manage.py` and then
+running:
 
     python3 makedata.py
 
@@ -151,14 +152,19 @@ If you need to edit your model (because you made a mistake) you must
 remember to run:
 
     python3 manage.py makemigration
+    rm db.sqlite3
     python3 manage.py migrate
+    python3 makedata.py
+
+This deletes all existing data and reruns the script.
 
 The dummy data script creates a superuser account with a username and
 password of `pavpan`. You should be able to log in to the admin
 interface by running your server and then going to
-[http://localhost:8000/admin](http://localhost:8000/admin). Once
-there, you should be able to log in and add, edit, or delete any
-assignments or submissions you like.
+[http://localhost:8000/admin](http://localhost:8000/admin). I strongly
+recommend registering `Assignment` and `Submission` with the Django
+Admin, as discussed in class. You would be able to log in and add,
+edit, or delete any assignments or submissions you like.
 
 Phase 3: Assignments view
 -------------------------
