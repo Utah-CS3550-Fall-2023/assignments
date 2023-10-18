@@ -138,7 +138,7 @@ will automatically also add an `id` field to each model.
 
 When you're finished, run:
 
-    python3 manage.py makemigration
+    python3 manage.py makemigrations
     python3 manage.py migrate
 
 This Phase will be graded by running a dummy data script, which you
@@ -151,7 +151,7 @@ running:
 If you need to edit your model (because you made a mistake) you must
 remember to run:
 
-    python3 manage.py makemigration
+    python3 manage.py makemigrations
     rm db.sqlite3
     python3 manage.py migrate
     python3 makedata.py
