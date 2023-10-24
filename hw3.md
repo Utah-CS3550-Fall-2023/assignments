@@ -263,9 +263,11 @@ Phase 5: Submissions and Profile view
 Write the `profile` view. The table should contain one row per
 assignment. For each assignment, the "Graded" column should count how
 many submissions are assigned to `ta1` and how many of those are
-graded (which means a non-null `score` for that submission). Do not
-loop over submissions one by one; instead, use the `count` query
-operator.
+graded (which means a non-null `score` for that submission).
+
+When counting the number of submissions for a particular assignment,
+do not loop over submissions one by one; instead, use the `count`
+query operator.
 
 Write the `submissions` view. Like with the `assignment`
 view, you will need to look up the `Assignment` in question by its ID

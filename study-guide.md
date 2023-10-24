@@ -181,3 +181,59 @@ URLs. You should know how to use the `render` function.
 
 You should know how to catch errors raised by queries and how to
 return 404 or other error pages.
+
+Forms
+-----
+
+You should know how to make a valid HTML form, including form
+attributes, labels, input elements, input element attributes, and
+button.
+
+You should know what the `action`, `method`, and `enctype` parameters
+do on forms, and be able explain the difference between the `get` and
+`post` values for `method` and choose the right one for various forms.
+(You are not expected to know what values to put for `enctype`, but
+you are expected to know in what case you need to set a non-default
+`enctype`.)
+
+You should know the `type`, `id`, `name`, `value`, and `disabled`
+attributes on input elements. You should know the following `type`s of
+input elements:
+
+- `text`, `number`, `password`, `hidden`
+- `checkbox`, `radio`, `file`
+- `date`, `time`, `email`, `tel`
+
+You should also know the `<textarea>`, `<select>`, and `<option>`
+elements.
+
+You should be able to write a Django view function (controller) that
+receives form data. You should know how to use the `request.GET`,
+`request.POST`, and `request.FILES` dictionaries to access form data.
+You should also know how to convert form data to integers or models
+objects and how to handle errors during this conversion. You should
+know how to redirect to another page at the successful conclusion of a
+form submission.
+
+You should know to call `save` on model objects and how to use the
+`bulk_create` and `bulk_update` methods to reduce the number of
+database queries.
+
+You should be able to describe the risks associated with file uploads.
+
+You should be able to write validator functions or `clean` methods for
+models. You should be able to check model validity after edits (by
+calling `full_clean`). You should know the structure of the
+`message_dict` field and be able to write forms that report user errors.
+
+You should be able to use the following input element attributes for
+client-side validation:
+
+- `required`
+- `min` / `max`
+- `minlength` / `maxlength`
+- `pattern`
+- `accept`
+
+You should also be able to use `:valid` / `:invalid` to style HTML
+forms.
