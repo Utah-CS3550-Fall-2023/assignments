@@ -305,6 +305,8 @@ Add an `action` attribute to the form whose value is the URL
 `/N/grade`, where `N` is the assignment ID. Also add a `method`
 attribute with value `post`.
 
+Add the line `{% csrf_token %}` somewhere inside the form.
+
 Define a new view function called `grade` and update `urls.py` to map
 that URL to this new view function.
 
