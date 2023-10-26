@@ -337,10 +337,9 @@ the correct submissions page. You can import `redirect` from
 `django.shortcuts`.
 
 Make sure all of your views handle any errors. If you are passed an
-invalid assignment ID, raise an `Http404` exception, which you can
-import from `django.http`. If you are passed an invalid submission ID
-in `grade`, raise an `Http400` exception, which you can import from
-the same place.
+invalid assignment ID, or an invalid submission ID, raise an `Http404`
+exception, which you can import from `django.http`, or other 400-level
+response code.
 
 Write a cover sheet
 -------------------
