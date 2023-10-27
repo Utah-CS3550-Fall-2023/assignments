@@ -25,8 +25,8 @@ As well as homework assignments:
   Due 15 Sep and 22 Sep.
 * [Homework 3 (Django)](hw3.md) \
   Due 20 Oct and 27 Oct.
-* Homework 4 (AWS) \
-  Currently not available. Due 3 Nov and 10 Nov.
+* [Homework 4 (AWS)](hw4.md) \
+  Due 3 Nov and 10 Nov.
 * Homework 5 (Identity) \
   Currently not available. Due 24 Nov.
 * Homework 6 (JS) \
