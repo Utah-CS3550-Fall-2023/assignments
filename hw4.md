@@ -1,4 +1,4 @@
-CS 3550 Assignment 3 (Django)
+CS 3550 Assignment 4 (AWS)
 ==========================
 
 **Status**: Final \
