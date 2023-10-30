@@ -348,7 +348,7 @@ Start NGINX by running:
 
 Wait a few seconds and then run:
 
-    sudo systemcl status nginx
+    sudo systemctl status nginx
 
 You should see a bunch of output that starts with a green dot and
 includes the green text "active (running)", like so:
@@ -522,6 +522,13 @@ This once again starts up the Nano text editor, this time editing your
 and change it to read:
 
     DEBUG = False
+
+Then find the line reading `ALLOWED_HOSTS = []` and change it to:
+
+    ALLOWED_HOSTS = ["localhost"]
+    
+This is because only NGINX should be allowed to connect directly to
+your Django application.
 
 Exit Nano (with `Ctrl+X`) and then run the following command:
 
