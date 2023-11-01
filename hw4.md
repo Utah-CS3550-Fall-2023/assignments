@@ -222,12 +222,6 @@ your virtual computer. Refresh until the "instance state" says
 "Stopped". Now select it again and use the same dropdown to start the
 instance.
 
-When you're not working on your assignment, stop the instance. When
-it's running you are using up your 750 free hours and when those are
-up AWS will want you to pay real money. The cost is roughly $9 per
-month of uptime at the moment. (The costs typically stay the same over
-time.)
-
 # Assigning an IP address
 
 Our virtual computer now exists, but it does not have a permanent IP
@@ -274,6 +268,17 @@ like this:
     ip.ip.ip.ip
 
 Commit and push to Github.
+
+You need to be a bit careful about starting and stopping your
+instance. When it's running you are using up your 750 free hours and
+when those are up AWS will want you to pay real money. The cost is
+roughly $9 per month of uptime at the moment. (The costs typically
+stay the same over time.) However, when your instance is *not*
+running, the Elastic IP costs you money (past one hour out of every
+12), roughly $4 per month. You _could_ release the Elastic IP, but
+that will interfere with later steps. So your best bet is to *not*
+turn off your instance: 750 hours is about a month of uptime, and a
+month is enough time to finish this assignment and get it graded.
 
 # Connecting to your machine
 
