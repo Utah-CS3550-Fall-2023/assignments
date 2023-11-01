@@ -455,7 +455,7 @@ If your main directory is named after your username, instead of
 
 On macOS, Linux, and WSL, run:
 
-    scp -r -i directory/to/file.pem cs3550 ubuntu@ip.ip.ip.ip:
+    scp -r -i directory/to/key.pem cs3550 ubuntu@ip.ip.ip.ip:
 
 Note the colon after the IP address! That's important! Also make sure
 to put in the correct path to the PEM file containing your key and
@@ -463,7 +463,7 @@ also to put in the correct Elastic IP address.
 
 On Windows, you'll instead need to run:
 
-    pscp -i <key.ppk> cs3550 ubuntu@ip.ip.ip.ip:
+    pscp -i C:\directory\to\key.ppk cs3550 ubuntu@ip.ip.ip.ip:
 
 If you get an error about `pscp` not being a valid command, check that
 you installed PuTTY. If you're sure you did, find the PuTTY
