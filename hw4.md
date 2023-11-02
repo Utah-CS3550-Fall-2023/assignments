@@ -416,7 +416,8 @@ not matter but using TAB is standard.
 This configuration tells the NGINX server to listen on port 80, both
 in IPv4 and IPv6 mode, and to refer to itself as your domain. It then
 asks NGINX to forward all requests to port 8000, where you will run
-your server.
+your server. But requests that start with `/static/` are instead
+served directly by NGINX, which is faster than forwarding to Django.
 
 Restart NGINX by running:
 
@@ -508,12 +509,18 @@ visit http://ip.ip.ip.ip/ with, as usual, your Elastic IP. You should
 see your application running and showing the list of assignments!
 
 Make sure that the stylesheet, favicon, images, and links all work
-correctly (except submission links, which need not work yet). If they
-don't, check that you haven't hard-coded `localhost:8000` into any of
-them. All links in your application should be to host-relative URLs
-which start with a forward slash (`/`). If you find any broken URLs,
-fix them. Then upload the new source code by re-running the `scp` (or
-`pscp`) command and rerun the `runserver` command.
+correctly (except submission links, which need not work yet). If one
+of them doesn't, check that you haven't hard-coded `localhost:8000`
+into any of your HTML files. All links in your application should be
+to host-relative URLs which start with a forward slash (`/`). If you
+find any broken URLs, fix them. Then upload the new source code by
+re-running the `scp` (or `pscp`) command and rerun the `runserver`
+command.
+
+If no static files work, check that your NGINX configuration has the
+correct `/static/` block. If you nonetheless cannot get it to work,
+you can remove that block and pass `--insecure` together with
+`--noreload` when running your Django application.
 
 Phase 5: Setting up your domain with HTTPS
 ------------------------------------------
