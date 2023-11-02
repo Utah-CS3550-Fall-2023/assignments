@@ -419,10 +419,11 @@ Restart NGINX by running:
     sudo systemctl restart nginx
 
 Visit your web server again, by going to http://ip.ip.ip.ip/ but with
-your server's Elastic IP address. You should now see a "504 Gateway
-Timeout" error page. This actually means you've succeeded and can move
-on to the next phase, because it means that NGINX is attempting to
-contact your Django server (which isn't running yet).
+your server's Elastic IP address. You should now see a "502 Bad
+Gateway" or "504 Gateway Timeout" error page. This actually means
+you've succeeded and can move on to the next phase, because it means
+that NGINX is attempting to contact your Django server (which isn't
+running yet).
 
 However, if you continue to see NGINX's default web page, or you don't
 see a web page at all, something has gone wrong. Make sure you've
