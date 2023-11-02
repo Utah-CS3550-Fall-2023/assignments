@@ -403,7 +403,7 @@ Edit the file until it contains the following text:
         location / {
             proxy_pass http://localhost:8000/;
         }
-
+    
         location /static/ {
             root /home/ubuntu/cs3550/;
         }
