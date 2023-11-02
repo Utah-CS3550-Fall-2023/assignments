@@ -237,3 +237,41 @@ client-side validation:
 
 You should also be able to use `:valid` / `:invalid` to style HTML
 forms.
+
+Deploy
+------
+
+You should be able to explain the role of a registrar. You should know
+what A and AAAA records do in DNS. You should be able to give the
+price, within an order of magnitude, of a domain ($5-20/yr), an IPv4
+address ($40-60), an IPv6 address ($0), inbound bandwidth ($0),
+outbound traffic ($50-100/TB), and an HTTPS certificate ($0). You
+should be able to explain why you need an IPv4 address.
+
+You should be able to name the top three could providers. You should
+be able to explain the difference between a "virtualized" and
+"bare-metal" cloud computer. You should be able to name some key cloud
+computing instance parameters, such as CPU architecture, CPU cores,
+available memory, available disk, and available accelerators like
+GPUs.
+
+You should be able to explain the roles of AWS and its EC2 and Elastic
+IP services. You should be give the cost, within an order of
+magnitude, of the deployment you were asked to create as part of
+Assignment 4 (about $9/mo). You should be able to explain the terms
+"instance" and "instance type".
+
+You should be able to define a Service Level Agreement and explain
+what a "two nines" or "five nines" availability level means. You
+should be able to explain the benefits of operating redundant services
+in multiple regions.
+
+You should be able describe briefly what Linux, SystemD, APT, SSH,
+BASH, and JournalCtl do. You should be able to explain the role of the
+gateway server and name popular gateway servers. You should be
+able to explain the role of the database server and name popular
+database servers.
+
+You should be able to explain what the `DEBUG` and `ALLOWED_HOSTS`
+settings in Django do and why they differ between development and
+deployment.
