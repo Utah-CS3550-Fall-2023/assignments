@@ -562,6 +562,12 @@ once again. You now want to add the following DNS record:
 - Value: your Elastic IP address with with nothing else (no `http://`
   or any extra punctuation).
 - TTL: 300, meaning 5 minutes.
+
+Add another, similar `A` record for `@`, with the same value and TTL.
+The reason to add two different records is that the `@` record covers
+the case without a subdomain (such as `domain.me`) while the `*`
+record covers all subdomains (such as `www.domain.me`). Since both are
+in common use, you want both records.
   
 Delete any other DNS records, except the TXT record you added in Phase
 1, that may already be there. Some registrars add default DNS records
