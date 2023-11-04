@@ -339,14 +339,6 @@ Again, press Enter when asked whether to continue. If asked further
 questions, click through them as before. This will also take a few
 minutes.
 
-Tell the NGINX server to run on startup:
-
-    sudo systemctl enable nginx
-
-Open your browser and navigate to that IP address, as in
-http://XX.XX.XX.XX/ with your particular IP address in there. You
-should see a default web page for the NGINX web server.
-
 Start NGINX by running:
 
     sudo systemctl start nginx
@@ -361,6 +353,12 @@ includes the green text "active (running)", like so:
 ![](screenshots/aws/aws8.png)
 
 If you don't see that, seek help.
+
+Open your browser and navigate to that IP address, as in
+http://XX.XX.XX.XX/ with your particular IP address in there. You
+should see a default web page for the NGINX web server. Make sure
+you're using `http://`, not `https://`; the HTTPS version won't work
+until the end of Phase 5.
 
 Also run the following command:
 
@@ -485,7 +483,7 @@ Once you've successfully executed the command, you should see a lot of
 output, one line per file that it's copying over. It can take a while
 to complete. If you can't get this command to succeed, seek help.
 
-# Running your application
+# Setting up static files
 
 Now switch back to the terminal that is logged in to your virtual
 computer (or log in again in a new terminal). Run the following:
@@ -494,6 +492,32 @@ computer (or log in again in a new terminal). Run the following:
 
 You should see all of the files in your project, in their usual files
 and directories.
+
+Now that you have your application on your virtual computer, we need
+to set up NGINX to serve your static files. To do so, it needs
+permissions to list your home directory and to read all of the files.
+You can grant it these permissions with these two commands:
+
+    chmod o+rx ~ cs3550 cs3550/static
+    chmod o+r cs3550/static/*
+
+The first line says all *o*ther users on the system (including NGINX)
+should have *r*ead and e*x*ecute permissions on the home directory,
+project directory, and static directory; in Unix permissions, the
+execute permission is needed on a directory to list the files inside.
+
+The second line says all *o*ther users should have *r*ead permissions
+on all of the files in `static`.
+
+Now visit http://ip.ip.ip.ip/static/main.css or another static file.
+You should see the file show up. If static files do not work, check
+that your NGINX configuration has the correct `/static/` block. Also
+check the permissions on your home directory, the `cs3550` directory,
+the `cs3550/static` directory, and all the files in the `cs3550`
+directory. You can check permissions with `ls -la` and the file or
+directory name.
+
+# Running your application
 
 Now do the following:
 
@@ -517,11 +541,6 @@ find any broken URLs, fix them. Then upload the new source code by
 re-running the `scp` (or `pscp`) command and rerun the `runserver`
 command.
 
-If no static files work, check that your NGINX configuration has the
-correct `/static/` block. If you nonetheless cannot get it to work,
-you can remove that block and pass `--insecure` together with
-`--noreload` when running your Django application.
-
 Phase 5: Setting up your domain with HTTPS
 ------------------------------------------
 
@@ -543,9 +562,19 @@ and change it to read:
 Then find the line reading `ALLOWED_HOSTS = []` and change it to:
 
     ALLOWED_HOSTS = ["localhost"]
-    
+
 This is because only NGINX should be allowed to connect directly to
 your Django application.
+
+After that line, add these lines:
+
+    CSRF_TRUSTED_ORIGINS = [
+      'http://ip.ip.ip.ip',
+      'http://*.mydomain.tld',
+      'https://*.mydomain.tld',
+    ]
+
+This is necessary for form submissions to work.
 
 Exit Nano (with `Ctrl+X`) and then run the following command:
 
