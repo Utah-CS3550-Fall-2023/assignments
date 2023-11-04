@@ -293,6 +293,12 @@ macOS, Linux, or WSL:
     cd directory/with/file.pem
     chmod 0700 file.pem
     ssh -i file.pem ubuntu@ip.ip.ip.ip
+    
+Since you're connecting for the first time, it'll ask if you're sure.
+You are. If you get an error message about "Unprotected private key
+file" and you are on WSL, you might try putting `sudo` in front of
+`ssh`, as in `sudo ssh ...`, for this and every other `ssh` command
+and `scp` command in this assignment.
 
 Substitute in the appropriate directory, file name, and Elastic IP
 address. If you are using Windows but not WSL, you'll need to do
@@ -432,7 +438,7 @@ However, if you continue to see NGINX's default web page, or you don't
 see a web page at all, something has gone wrong. Make sure you've
 restarted NGINX, and then run:
 
-    sudo systemcl status nginx
+    sudo systemctl status nginx
 
 You should again see a bunch of output that starts with a green dot
 and includes the green text "active (running)". If you don't see that,
