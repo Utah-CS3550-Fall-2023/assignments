@@ -582,7 +582,9 @@ Exit Nano (with `Ctrl+X`) and then run the following command:
     
 This starts your Django application once again, but it uses `nohup`
 which means that if you close the terminal window Django will keep
-running. If you want to stop it, you can run `killall nohup`.
+running. If you want to stop it, you can run:
+
+    kill $(pgrep -f runserver)
 
 While your server is running under `nohup`, close the terminal window
 (without stopping the command), visit http://ip.ip.ip.ip/ and ensure
