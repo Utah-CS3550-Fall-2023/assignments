@@ -397,7 +397,7 @@ to cut a line of text; you can paste it with `^U` meaning `Ctrl+U`.
 You can exit Nano with `Ctrl+X`; it'll ask you whether you want to
 save changes, and you can press ENTER to indicate that you do.
 
-Edit the file until it contains the following text:
+Edit the file until it contains the following text *and nothing else*:
 
     server {
         listen 80 default_server;
