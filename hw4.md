@@ -394,8 +394,14 @@ to add text to the file, and use the keyboard shortcuts shown on the
 bottom of the screen to save the file, delete lines of text, and so
 on. For example, the keyboard shortcut `^K` means you press `Ctrl+K`
 to cut a line of text; you can paste it with `^U` meaning `Ctrl+U`.
+
 You can exit Nano with `Ctrl+X`; it'll ask you whether you want to
-save changes, and you can press ENTER to indicate that you do.
+save changes, and you can press ENTER to indicate that you do. If it
+asks you for the file name to write to, do not change the file name it
+suggests, which should start with `/var/tmp`. The `sudoedit` wrapper
+around Nano will take care of overwriting the actual NGINX config.
+This is done for security; Nano itself is run without superuser
+privileges.
 
 Edit the file until it contains the following text *and nothing else*:
 
