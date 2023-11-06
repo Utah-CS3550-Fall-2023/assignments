@@ -484,7 +484,7 @@ also to put in the correct Elastic IP address.
 
 On Windows, you'll instead need to run:
 
-    pscp -i C:\directory\to\key.ppk cs3550 ubuntu@ip.ip.ip.ip:
+    pscp -r -i C:\directory\to\key.ppk cs3550 ubuntu@ip.ip.ip.ip:
 
 If you get an error about `pscp` not being a valid command, check that
 you installed PuTTY. If you're sure you did, find the PuTTY
