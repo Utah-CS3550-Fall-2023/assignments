@@ -27,8 +27,8 @@ As well as homework assignments:
   Due 20 Oct and 27 Oct.
 * [Homework 4 (AWS)](hw4.md) \
   Due 3 Nov and 10 Nov.
-* Homework 5 (Identity) \
-  Currently not available. Due 24 Nov.
+* [Homework 5 (Permissions)](hw5.md) \
+  Currently a draft. Due 17 Nov and 24 Nov.
 * Homework 6 (JS) \
   Currently not available. Due 1 Dec and 8 Dec.
 
