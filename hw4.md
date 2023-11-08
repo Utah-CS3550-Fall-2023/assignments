@@ -189,15 +189,15 @@ In the "Network settings" section, click the checkboxes to allow HTTP
 and HTTPS access. Leave the SSH checkbox checked.
 
 Then, in the "Network settings" section, click the edit button in the
-top-left corner. Next to "VPC" click the "reload" button and then
-select "Create default VPC". Click through the resulting screen to
-create a default "VPC". Once you see a green bar reading "You
-successfully created vpc-xxxxxxxxxxx", head back to the EC2 page (it
-should be in another tab), click the "reload" button next to VPC, and
-now the VPC input box should be show some kind of default value. The
-subnet input box should also now show "no preference", which is fine.
-Under Auto-assign Public IP change the value to "Enable" if it wasn't
-already "Enable".
+top-right corner. Check whether the "VPC" box is empty. If it is,
+click the "reload" button nezt to it and then select "Create default
+VPC". Click through the resulting screen to create a default "VPC".
+Once you see a green bar reading "You successfully created
+vpc-xxxxxxxxxxx", head back to the EC2 page (it should be in another
+tab), click the "reload" button next to VPC, and now the VPC input box
+should be show some kind of default value. The subnet input box should
+also now show "no preference", which is fine. Under Auto-assign Public
+IP change the value to "Enable" if it wasn't already "Enable".
 
 Under "Configure storage" leave the default (8 GB of general-purpose
 SSD storage) in place.
