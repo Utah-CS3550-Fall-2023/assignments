@@ -1,24 +1,23 @@
 CS 3550 Assignment 5 (Permissions)
 ==================================
 
-**Status**: Draft \
+**Status**: Final \
 **Due**: Phase 1 due **17 Nov**, Phase 2--5 due **24 Nov**
 
 About
 -----
 
-In this assignment you'll add user identities and permissions to your
-application. You'll also fill out the student side of the application.
-Specifically, you will:
+In this assignment you'll add user authentication and authorization to
+your application. You'll also fill out the student side of the
+application. Specifically, you will:
 
 - Set up a login system for users
-- Enforce a security policy for all existing views / actions
 - Customize what a user sees based on their identity
+- Enforce a security policy for all existing views / actions
 - Set up file uploads and secure them
 
 The assignment is due Friday, 24 Nov before midnight. The course's
-normal extension policy applies. See below for hand-in instructions;
-they are different from normal assignments
+normal extension policy applies.
 
 Phase 1: Enabling logins
 ------------------------
@@ -28,29 +27,29 @@ In your `views.py` file, add the following line to the top:
     from django.contrib.auth import authenticate, login, logout
 
 Next, open up the `login.html` template. It should contain an HTML
-form; make sure this form is set up to make a `POST` request to
-`/profile/login` and contains the mandatory `{% csrf_token %}` block
-somewhere inside. Also make sure that teach `<input>` inside that form
-has a `name` and the appropriate `type`.
+form; make sure this form makes a `POST` request to `/profile/login`
+and contains the mandatory `{% csrf_token %}` block somewhere inside.
+Also make sure that each `<input>` inside that form has a `name` and
+the appropriate `type`.
 
 Note that the form submits to the same URL that it is served from.
 This is a common pattern, and it means the controller needs to use the
 HTTP request type (`GET` or `POST`) to decide whether to render the
 form or to process submissions.
 
-So find your `login_form` controller. Currently, it should merely
-render your `login.html` template. Modify the `login_form` controller
-so that it continues doing that for `GET` requests, but add a separate
-branch for `POST` requests. In that branch:
+So find your `login_form` controller. Currently, it merely renders
+your `login.html` template. Modify the `login_form` controller so that
+it continues doing that for `GET` requests, but add a separate branch
+for `POST` requests. In that branch:
 
 1. Extract the username and password from the POST request;
-2. Then call [Django's `authenticate` function][docs-auth].
-   This function either returns a `User` object or `None`.
+2. Then call [Django's `authenticate` function][docs-auth]
+   (this function either returns a `User` object or `None`);
 3. If authentication succeeds,
    call [Django's `login` function][docs-login]
    and then redirect to the `/profile/` page.
 4. If authentication fails, re-render the form,
-   same as if it were a `GET` request
+   same as if it were a `GET` request.
 
 You are expected to follow the links above to learn how to call
 `authenticate` and `login` correctly. Note that it is possible that
@@ -64,7 +63,8 @@ or the empty string if there isn't.
 
 In your `profile` view, pass `request.user` to the template. In the
 `profile.html` template, in the action card, display the user's
-`username` field.
+`username` field. This step is important because it allows you to test
+whether or not you actually logged in.
 
 Test that you can log in and see the username you've logged in as on
 the profile page. If you've run `makedata.py`, you can log in as:
@@ -88,7 +88,7 @@ case the username is the empty string.)
 If you can log in, see your username on the profile page, and log out,
 you should be done with this phase. You can confirm by using the
 auto-tester. If the auto-tester passes, you are done with this phase.
-   
+
 [docs-auth]: https://docs.djangoproject.com/en/4.2/topics/auth/default/#django.contrib.auth.authenticate
 [docs-login]: https://docs.djangoproject.com/en/4.2/topics/auth/default/#django.contrib.auth.login
 [docs-logout]: https://docs.djangoproject.com/en/4.2/topics/auth/default/#django.contrib.auth.logout
