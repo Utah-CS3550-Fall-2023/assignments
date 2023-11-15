@@ -275,3 +275,23 @@ database servers.
 You should be able to explain what the `DEBUG` and `ALLOWED_HOSTS`
 settings in Django do and why they differ between development and
 deployment.
+
+Security
+========
+
+You should be able to describe a realistic threat model for a small
+web application, including attackers, goals, and capabilities. You
+should be able to suggest security policies for simple web
+applications like the ones in your assignments.
+
+You should be able to define both authorization and authentication.
+You should be able to explain how cookies are used to create client
+identity and how session data is stored by the server. You should be
+able to describe simple security policies in terms of objects,
+actions, users, and groups.
+
+You should be able to use `request.session` and `request.user` in
+Django controllers. You should be able to use the `authorize`,
+`login`, and `logout` functions for logging users in and out. You
+should be able to test if a Django `User` is a member of a `Group` and
+raise `PermissionDenied` if an authorization check fails.
