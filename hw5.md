@@ -183,12 +183,13 @@ Now let's customize each view.
 
 The `assignments` view does not need any customization.
 
-The `assignment` view should change its "action card" based on the
-logged in user. For a TA or the administrative user, it should
-continue showing what it currently does: a count of total submissions,
-total students, and the number of submissions assigned to the current
-TA. For a student or the `AnonymousUser`, it should not contain any
-content at all. (You'll add some in Phase 4.)
+The `assignment` view (you might call it `index`) should change its
+"action card" based on the logged in user. For a TA or the
+administrative user, it should continue showing what it currently
+does: a count of total submissions, total students, and the number of
+submissions assigned to the current TA. For a student or the
+`AnonymousUser`, it should not contain any content at all. (You'll add
+some in Phase 4.)
 
 The `submissions` view should show all submissions assigned to the
 current user when viewed by a TA, or just all submissions when viewed
