@@ -82,8 +82,7 @@ this new `logout_form` controller. Modify the `profile.html` template
 so that the "Log out" link takes the user to `/profile/logout`.
 
 Test that logging out works correctly. When you are logged out, you
-should not see any username on the profile page. (Technically, in this
-case the username is the empty string.)
+should either see no username or "AnonymousUser" on this page.
 
 If you can log in, see your username on the profile page, and log out,
 you should be done with this phase. You can confirm by using the
