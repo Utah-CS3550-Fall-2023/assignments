@@ -295,3 +295,11 @@ Django controllers. You should be able to use the `authorize`,
 `login`, and `logout` functions for logging users in and out. You
 should be able to test if a Django `User` is a member of a `Group` and
 raise `PermissionDenied` if an authorization check fails.
+
+You should be able to explain what an injection vulnerability is, and
+what the benefits and risks are of using `|safe` or `.raw()` in
+Django. You should be able to explain what CSRF is, what `{%
+csrf_token %}` outputs, and what the risks are of using
+`@csrf_exempt`. You should be able to explain what an open redirect
+is, and what to look for in your code to find it. You should be able
+to explain what CVEs are and what the OWASP top 10 are.
