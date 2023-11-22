@@ -29,8 +29,9 @@ As well as homework assignments:
   Due 3 Nov and 10 Nov.
 * [Homework 5 (Permissions)](hw5.md) \
   Due 17 Nov and 24 Nov.
-* Homework 6 (JS) \
-  Currently not available. Due 1 Dec and 8 Dec.
+* [Homework 6 (JavaScript)](hw6.md) \
+  Currently a draft, to be released on 27 Nov. \
+  Due 1 Dec and 8 Dec.
 
 You can see draft assignments by choosing them from the file list
 above. However, until those assignments are finalized the instructor
