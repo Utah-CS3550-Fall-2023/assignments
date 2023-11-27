@@ -43,7 +43,7 @@ Now edit your `header.html` template (which should be included from
 all other templates) and add the following lines to it:
 
     <script type=module async>
-      import say_hi from "/static/main.js";
+      import { say_hi } from "/static/main.js";
       say_hi()
     </script>
 
@@ -63,7 +63,7 @@ get help.
 Next, we will download the jQuery library that we will be using. In
 the root of your repository, execute the following command:
 
-    git submodule add --branch 3.x-stable git@github.com:jquery/jquery.git static/jquery
+    git submodule add --branch 3.x-stable https://github.com/jquery/jquery static/jquery
 
 This will download the latest 3.x version of jQuery, to a folder named
 `jquery` inside your static folder. It should take about a minute to
@@ -75,7 +75,7 @@ more of the autotester passing. If it does not, get help.
 
 Add the following line to the top of `main.js`:
 
-    import $ from "/static/jquery/src/jquery.js";
+    import { $ } from "/static/jquery/src/jquery.js";
     
 This imports the `$` function from the jQuery library. In jQuery the
 `$` function is used to wrap HTML nodes with jQuery features.

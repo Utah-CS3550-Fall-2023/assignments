@@ -373,10 +373,10 @@ Edit your `settings.py` and add the following two lines:
     MEDIA_URL = "uploads/"
 
 Edit `submissions.html` and make sure each row in the table links to
-the submission's file's `url` field. This URL should start with
-`/uploads/`. Similarly, in `assignment.html`, and like the submission
-file name to the submission's file's `url` field. These links won't
-work yet.
+the submission's file's `url` field. This `url` field should start
+with `/uploads/`. Similarly, in `assignment.html`, and like the
+submission file name to the submission's file's `url` field. These
+links won't work yet.
 
 We now need to add a controller to serve these uploaded files. Add the
 following line to your `urls.py`:
