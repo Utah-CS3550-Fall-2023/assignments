@@ -42,17 +42,14 @@ and you'll see a lot of older JavaScript tutorials not use them.
 Now edit your `header.html` template (which should be included from
 all other templates) and add the following lines to it:
 
-    <script type=module async>
+    <script type=module>
       import { say_hi } from "/static/main.js";
       say_hi()
     </script>
 
 A few features of this code deserve explanation. We use `type=module`
 to indicate that we are using modules. That is what allows us to use
-the `import` statement. All of our scripts will be modules. We also
-use `async` to mean that the browser can consider the page loaded even
-if this script hasn't run yet. We'll also be using `async` on all of
-our scripts.
+the `import` statement. All of our scripts will be modules.
 
 Run your server and visit a page. (Since you edited `header.html`, any
 page should do.) Open the browser developer console. You should see
@@ -80,30 +77,25 @@ Add the following line to the top of `main.js`:
 This imports the `$` function from the jQuery library. In jQuery the
 `$` function is used to wrap HTML nodes with jQuery features.
 
-Then replace the `say_hi();` line with this:
+Then replace the `say_hi` definition with this:
 
-    $(document).ready(() => {
-       say_hi(); 
-    });
+    export function say_hi(elt) {
+        console.log("Say hi to", elt);
+    }
+
+and call it like this:
+
+    say_hi($("h1"));
     
-The `$(document)` expression wraps the normal `document` object (the
-document contains the web page contents) with jQuery features. The
-feature we want is the jQuery `ready` method. This method runs a given
-function when the web page is finished loading.. We use JavaScript's
-`() => { ... }` syntax to define an anonymous inline function with no
-arguments to pass to `ready`, and that anonymous function calls
-`say_hi`.
-
-Put all this together and we are using jQuery to run `say_hi` only
-once the web page has finished loading. (`say_hi` doesn't do much, so
-it doesn't matter when it runs, but in Phases 2--5 you'll be
-interacting with the web page and will in fact want it to finish
-loading.
+You should now see it print the words "Say hi to" followed by a
+JavaScript object definition. This object definition is how
+jQuery-wrapped elements print. You can usually expand the `0` field to
+see the underlying element being wrapped.
 
 In `header.html` delete the existing `<script>` block and replace it
 with the following:
 
-    <script type="module" async src="/static/main.js"></script>
+    <script type="module" src="/static/main.js"></script>
 
 The `src` attribute is more or less shorthand for `import`ing the
 named file.
@@ -205,7 +197,7 @@ descending correctly. Make sure that you:
 
 Once you have written `make_table_sortable`, add a `script` tag to the
 assignments and profile pages to make the main table sortable. Make
-sure to mark the script `async` and give it `type=module`.
+sure to give the script `type=module`.
 
 
 Phase 3: Improving table sorting
@@ -523,7 +515,7 @@ different weights:
 
 - You link to a `main.js` file
 - The `main.js` file is loaded and runs without error
-- You use the `async` and `type=module` parameters
+- You use the `type=module` parameter
 - You import the `jquery` library.
 
 **Phase 2** is worth 20 points. It is graded on:
