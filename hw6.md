@@ -88,21 +88,6 @@ Add the following line to the top of `main.js`:
 This imports the `$` function from the jQuery library. In jQuery the
 `$` function is used to wrap HTML nodes with jQuery features.
 
-Then replace the `say_hi` definition with this:
-
-    export function say_hi(elt) {
-        console.log("Say hi to", elt);
-    }
-
-and call it like this:
-
-    say_hi($("h1"));
-    
-You should now see it print the words "Say hi to" followed by a
-JavaScript object definition. This object definition is how
-jQuery-wrapped elements print. You can usually expand the `0` field to
-see the underlying element being wrapped.
-
 In `header.html` delete the existing `<script>` block and replace it
 with the following:
 
@@ -110,6 +95,21 @@ with the following:
 
 The `src` attribute is more or less shorthand for `import`ing the
 named file.
+
+Then replace the `say_hi` definition with this:
+
+    export function say_hi(elt) {
+        console.log("Say hi to", elt);
+    }
+
+and add this to the end of the file:
+
+    say_hi($("h1"));
+    
+You should now see it print the words "Say hi to" followed by a
+JavaScript object definition. This object definition is how
+jQuery-wrapped elements print. You can usually expand the `0` field to
+see the underlying element being wrapped.
 
 Run the server again and visit a page. Check that you again see the
 text "Hello" appear. If it does not, get help. Commit all changes and
