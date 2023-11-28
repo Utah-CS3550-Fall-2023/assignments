@@ -30,7 +30,6 @@ As well as homework assignments:
 * [Homework 5 (Permissions)](hw5.md) \
   Due 17 Nov and 24 Nov.
 * [Homework 6 (JavaScript)](hw6.md) \
-  Currently a draft, to be released on 27 Nov. \
   Due 1 Dec and 8 Dec.
 
 You can see draft assignments by choosing them from the file list

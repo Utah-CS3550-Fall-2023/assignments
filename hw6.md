@@ -1,7 +1,7 @@
 CS 3550 Assignment 6 (JavaScript)
 =================================
 
-**Status**: Draft (to be done by November 27) \
+**Status**: Final \
 **Due**: Phase 1 due **1 Dec**, Phase 2--5 due **8 Dec**
 
 About
@@ -109,12 +109,10 @@ and add this to the end of the file:
 You should now see it print the words "Say hi to" followed by a
 JavaScript object definition. This object definition is how
 jQuery-wrapped elements print. You can usually expand the `0` field to
-see the underlying element being wrapped.
+see the underlying element being wrapped. If it does not, get help.
 
-Run the server again and visit a page. Check that you again see the
-text "Hello" appear. If it does not, get help. Commit all changes and
-push to Github. You should now pass the autotester. If you do, you are
-done with Phase 1.
+Commit all changes and push to Github. You should now pass the
+autotester. If you do, you are done with Phase 1.
 
 Phase 2: Sorting and filtering
 ------------------------------
