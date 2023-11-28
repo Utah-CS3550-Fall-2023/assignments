@@ -60,13 +60,24 @@ get help.
 Next, we will download the jQuery library that we will be using. In
 the root of your repository, execute the following command:
 
-    git submodule add --branch 3.x-stable https://github.com/jquery/jquery static/jquery
+    git submodule add https://github.com/jquery/jquery static/jquery
+    
+> [!CAUTION]
+> An earlier version of these instructions instead asked you to
+> download the `3.x-stable` branch of jQuery, which doesn't work as it
+> does not support modules. If you did so, execute the following
+> command from the same folder:
+>
+>     git -C static/jquery checkout main
+>
+> This should switch your jQuery download to the latest `main` branch.
+> You will be asked to (and should) commit the `.gitmodules` file.
 
-This will download the latest 3.x version of jQuery, to a folder named
+This will download the latest version of jQuery, to a folder named
 `jquery` inside your static folder. It should take about a minute to
 run. If you see any lines beginning with `fatal` or `error`, something
-has gone wrong. Get help immediately. If you do not, commit and push your
-changes to Github; the changes should be to a new file called
+has gone wrong. Get help immediately. If you do not, commit and push
+your changes to Github; the changes should be to a new file called
 `.gitmodules` and to the `static/jquery` directory. You should now see
 more of the autotester passing. If it does not, get help.
 
