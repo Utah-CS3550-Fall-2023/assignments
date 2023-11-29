@@ -285,8 +285,8 @@ Third, to give the user an indication of whether the text is sorted or
 not, add the following code to your CSS:
 
     th.sortable { cursor: pointer; }
-    th.sort-asc::after { content: " &#9650;" }
-    th.sort-desc::after { content: " &#9660;" }
+    th.sort-asc::after { content: " \25b2;" }
+    th.sort-desc::after { content: " \25bc;" }
     
 The first line of CSS shows the "hand" cursor when hovering over
 sortable table headers, while the next two lines apply to all `<th>`
