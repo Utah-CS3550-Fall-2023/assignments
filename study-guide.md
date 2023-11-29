@@ -303,3 +303,34 @@ csrf_token %}` outputs, and what the risks are of using
 `@csrf_exempt`. You should be able to explain what an open redirect
 is, and what to look for in your code to find it. You should be able
 to explain what CVEs are and what the OWASP top 10 are.
+
+JavaScript
+==========
+
+You should be able to include JavaScript into an HTML page. You should
+know the syntax of a `<script>` tag, how to write inline JS, and what
+the `defer` and `async` parameters do. You should also know what
+`type=module` does, at least at a high level (allows `import`,
+separate namespace). You should be able to explain the idea of
+progressive enhancement.
+
+You should be comfortable with basic JavaScript syntax. You should
+also know what to avoid: type mixing, accidental globals, `var`
+declarations, `for` loops with undeclared or `var`-declared variables,
+`for`/`in` loops, `function` inline functions. You should know
+`Arrays.from` and the difference between arrays and array-like objects.
+You should be able to identify bugs arising from the use of `this` and
+be able to fix them by switching to arrow functions.
+
+You should be able to use jQuery's `$` for wrapping, selecting, and
+creating elements. You should be able to use the following jQuery APIs
+for manipulating elements:
+
+- `append`, `prepend`, `before`, `after`, `remove`, `replace`
+- `addClass`, `removeClass`, `val`, `attr`
+- `children`, `parent`, `find`, `next`, `previous`
+- `text`
+- `data`
+
+You should be able to attach event handlers with jQuery's `on` method
+and know the `target` field and `preventDefault` method on events.
