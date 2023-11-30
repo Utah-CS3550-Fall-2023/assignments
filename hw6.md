@@ -81,6 +81,16 @@ your changes to Github; the changes should be to a new file called
 `.gitmodules` and to the `static/jquery` directory. You should now see
 more of the autotester passing. If it does not, get help.
 
+> [!NOTE]
+> If you are using more than one machine, you may find that on other
+> machines, your `static/jquery` folder is empty. In that case, you
+> should run:
+> 
+    > git submodule init
+    > git submodule update
+> 
+> That should download the `jquery` library to the new machine as well
+
 Add the following line to the top of `main.js`:
 
     import { $ } from "/static/jquery/src/jquery.js";
