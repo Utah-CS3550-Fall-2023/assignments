@@ -205,8 +205,8 @@ descending correctly. Make sure that you:
 - If the string has a percentage sign (it should, on a student's
   profile) or a fraction sign (it should, on a TA's profile), you
   convert it to a number by taking everything up to the non-whitespace
-  character. If the string has no text, where it goes does not matter.
-  The [JavaScript `Math.parseFloat` function][js-mpf] will do this
+  character. If the string has no numbers, where it goes does not matter.
+  The [JavaScript `parseFloat` function][js-mpf] will do this
   correctly by default.
 - Sorting descending is not the same thing as sorting ascending, then
   reversing. Instead, you need to reverse the sign of the comparison
