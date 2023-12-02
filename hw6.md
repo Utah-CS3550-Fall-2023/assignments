@@ -358,6 +358,9 @@ exactly this looks like; it is OK if it looks like of ugly. It is only
 important that there is some visual indication that the upload
 succeeded.
 
+You may still get errors about the CSRF token. You may need to add a
+header, as described [here](https://docs.djangoproject.com/en/4.2/howto/csrf/#setting-the-token-on-the-ajax-request).
+
 (Of course, a proper implementation would, for example, update the
 page to link to the uploaded document, so that it would look identical
 to refreshing the page. However, in this assignment we're not testing
