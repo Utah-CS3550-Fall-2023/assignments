@@ -347,7 +347,7 @@ You also need to pass these fields in the `settings` argument,
 otherwise it won't work:
 
 - `false` as `processData`
-- The form's `enctype` field as its `contentType`
+- `false` as `contentType`
 - The form's `enctype` field as its `mimeType`
 
 Finally, pass `success` and `error` functions. The `error` function
