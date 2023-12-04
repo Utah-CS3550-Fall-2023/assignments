@@ -334,3 +334,10 @@ for manipulating elements:
 
 You should be able to attach event handlers with jQuery's `on` method
 and know the `target` field and `preventDefault` method on events.
+
+You should know about the `$.ajax` function, including at least the
+`method` and `data` fields in the options object. You should be able
+to make asynchronous requests using the `success` callback. You should
+be able to handle errors using the `error` callback. You should be
+able to use `$.ajax` as a promise with `await`. You should be know how
+to move `await` calls later in the code to enable more parallelism.
