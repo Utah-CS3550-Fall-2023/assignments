@@ -204,7 +204,7 @@ descending correctly. Make sure that you:
   "100".
 - If the string has a percentage sign (it should, on a student's
   profile) or a fraction sign (it should, on a TA's profile), you
-  convert it to a number by taking everything up to the non-whitespace
+  convert it to a number by taking everything up to the non-number
   character. If the string has no numbers, where it goes does not matter.
   The [JavaScript `parseFloat` function][js-mpf] will do this
   correctly by default.
