@@ -295,8 +295,8 @@ Third, to give the user an indication of whether the text is sorted or
 not, add the following code to your CSS:
 
     th.sortable { cursor: pointer; }
-    th.sort-asc::after { content: " \25b2;" }
-    th.sort-desc::after { content: " \25bc;" }
+    th.sort-asc::after { content: " \25b2"; }
+    th.sort-desc::after { content: " \25bc"; }
     
 The first line of CSS shows the "hand" cursor when hovering over
 sortable table headers, while the next two lines apply to all `<th>`
@@ -379,7 +379,7 @@ a specific final grade.
 
 To make this possible, we want to add a hypothesized grade interaction
 to students' profile pages. Specifically, we want to add a
-"Hypothesize" button to the bottom of student profile pages. When
+"Hypothesize" button to the top of student profile pages. When
 clicked, it should replace all `Not Due` or `Ungraded` grades with a
 number input field. As percentages are typed into those input fields,
 the final grade should be recalculated as if the student got that
