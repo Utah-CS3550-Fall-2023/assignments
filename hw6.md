@@ -320,7 +320,7 @@ invoke the `make_form_async` function on the submission form element.
 Keep in mind that some assignment pages don't have submission forms,
 like the TA view or when an assignment is past due.
 
-Inside `make_form_async`, add [`submit` hander][jq-submit]. This
+Inside `make_form_async`, add [`submit` handler][jq-submit]. This
 handler should call [the `preventDefault` method][jq-pd] to prevent
 the form from being submitted normally. It should then set [the
 `disabled` attribute][mdn-disabled] on the file input and button in
