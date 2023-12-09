@@ -291,7 +291,7 @@ able to describe simple security policies in terms of objects,
 actions, users, and groups.
 
 You should be able to use `request.session` and `request.user` in
-Django controllers. You should be able to use the `authorize`,
+Django controllers. You should be able to use the `authenticate`,
 `login`, and `logout` functions for logging users in and out. You
 should be able to test if a Django `User` is a member of a `Group` and
 raise `PermissionDenied` if an authorization check fails.
